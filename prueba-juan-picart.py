@@ -22,6 +22,8 @@ botonNuevo.click()
 
 campoAsunto = driver.find_element(By.XPATH, "//input[@name='Subject']")
 campoAsunto.send_keys("Este es un mensaje de prueba")
+time.sleep(10)
 
 driver.find_element(By.XPATH, "//input[@name='SubmitTicket']").click()
+time.sleep(10)
 driver.close()
